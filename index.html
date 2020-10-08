@@ -34,84 +34,116 @@
 <!-- HEADER -->
 <header>
   <h1>Wendy's Workouts</h1>
+  <div class="line-break"></div>
   <nav>
     <ul>
       <li>Home</li>
-      <li>About</li>
-      <li>Recipes</li>
-      <li>Contact</li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#recipe-section">Recipes</li>
+      <li><a href="#contact-section">Contact</a></li>
     </ul>
   </nav>
 
-  <div>
-    <h2>Healthy Weight Loss and Fitness Coach</h2>
-    <p>"Hi, I'm Wendy! Based in Tiny Township on the shores of Georgian Bay, I specialize in helping adults 40+ reach their health and fitness goals"</p>
-    <button>Get In Touch</button>
-    <button>Learn More</button>
-  </div>
+  <div class="hero-container">
+    <div class="hero-content">
+      <h2>Healthy Weight Loss and Fitness Coach</h2>
+      <figure>
+        <img src="img/wendy-spademan.png" alt="Wendy on the beach"></img>
+        <figcaption>Photo by Emily Ferris | <a href="https://www.emilyferris.ca/" target="_blank">emilyferris.ca</a></figcaption>
+      </figure>
+      <p>"Hi, I'm Wendy! Based in Tiny Township on the shores of Georgian Bay, I specialize in helping adults 40+ reach their health and fitness goals"</p>
+      <div class="hero-buttons">
+        <a href="#contact-section"><button>Get In Touch</button></a>
+        <a href="#about-section"><button class="learn">Learn More</button></a>
+      </div>
+    </div>
 
-  <img src="" alt="Wendy on the beach"></img>
+  </div>
 </header>
 
 <!-- ABOUT -->
 <main>
-  <h3>About</h3>
-  <p>I am a retired elementary school music teacher and CanfitPro certified health and fitness coach. Based in Tiny Township Ontario, I specialize in working with adults 40+ stay active and eat well to live their best life.</p>
-  <h5>My Qualifications</h5>
-  <ul>
-    <li>Personal Training Specialist</li>
-    <li>Healthy Weight Loss Coach</li>
-    <li>CanfitPro Certified</li>
-  </ul>
-  <p>Read more about the services I offer below</p>
+  <section class="about" id="about-section">
+    <h3>About</h3>
+    <p>I am a retired elementary school music teacher and <a href="https://www.canfitpro.com/" target="_blank">canfitpro</a> certified health and fitness coach. Based in Tiny Township Ontario, I specialize in working with adults 40+ stay active and eat well to live their best life.</p>
+    <h5>My Qualifications</h5>
+    <ul>
+      <li>Personal Training Specialist</li>
+      <li>Healthy Weight Loss Coach</li>
+      <li>canfitpro Certified</li>
+    </ul>
+    <p>Read more about the services I offer below</p>
+  </section>
 
-  <h4>Personal Assessment</h4>
-  <p>Before designing your personal fitness program, I will conduct a thorough assessment of your current fitness level, including strength, cardiorespiratory capacity and flexibility.
-  <br>
-  Together we will set realistic goals to improve your health and physical fitness.
-  <br>
-  Based on your priorities, I will plan a series of workouts and adapt them to meet your needs.</p>
+  <div class="wrapper blue">
+    <h4>Personal Assessment</h4>
+    <p>Before designing your personal fitness program, I will conduct a thorough assessment of your current fitness level, including strength, cardiorespiratory capacity and flexibility.
+      <br><br>
+    Together we will set realistic goals to improve your health and physical fitness.
+    <br><br>
+    Based on your priorities, I will plan a series of workouts and adapt them to meet your needs.</p>
+  </div>
 
-  <h4>Fitness Routines</h4>
-  <p>I offer one-hour sessions in my home studio, your home or virtually.  Your workout will begin with a light cardio warmup and some dynamic stretching.
-  <br>
-  Then we will do a series of strength training exercises focused on your individual needs.
-  <br>
-  We will finish with some full body stretches that will leave you feeling physically and mentally energized.</p>
+  <div class="wrapper">
+    <h4>Fitness Routines</h4>
+    <p>I offer one-hour sessions in my home studio, your home or virtually.  Your workout will begin with a light cardio warmup and some dynamic stretching.
+    <br><br>
+    Then we will do a series of strength training exercises focused on your individual needs.
+    <br><br>
+    We will finish with some full body stretches that will leave you feeling physically and mentally energized.</p>
+  </div>
 
-  <h4>Diet</h4>
-  <p>We will meet for two or three one hour sessions to analyze your eating habits and dietary needs.
-  <br>
-  I will then support you in making nutritionally sound and practical changes that will lead to weight loss.
-  <br>
-  Rather than asking you to adhere to a rigid  diet we will develop individualized strategies to help you make lasting, healthy changes to your food choices.</p>
+  <div class="wrapper blue">
+    <h4>Diet</h4>
+    <p>We will meet for two or three one hour sessions to analyze your eating habits and dietary needs.
+    <br><br>
+    I will then support you in making nutritionally sound and practical changes that will lead to weight loss.
+    <br><br>
+    Rather than asking you to adhere to a rigid  diet we will develop individualized strategies to help you make lasting, healthy changes to your food choices.</p>
+  </div>
 
   <h5>Testimonials</h5>
-  <quote>Here is a quote from a client who is so happy, healthy and loves working with Wendy! Highly recommend teaming up with this wonderful women</quote>
+  <p class="quote">Here is a quote from a client who is so happy, healthy and loves working with Wendy! Highly recommend teaming up with this wonderful women</p>
 
-  <h2>Pricing</h2>
-  <h3>$45 / Hour</h3>
-  <p>Each session is one hour long. Just looking for a consultation to get you started? This may be the plan for you</p>
-  <h3>$200</h3>
-  <p>Receive 5 one hour sessions and save when you book this package</p>
-  <h3>$400</h3>
-  <p>Receive 10 one our sessions PLUS get your initial consulation FREE!</p>
-  <button>Book Now</button>
+  <div class="pricing">
+    <div class="wrapper grey center">
+      <h3>Pricing</h3>
+      <p>Below you will find my rates and packages. Get in touch today to book your sessions.</p>
 
-  <h2>Recipes</h2>
-  <p>Check out some of my favourite healthy recipes you can try today!</p>
-  <h4>Recipe Name</h4>
-  <p>Start your day right with this energy packed breakfast</p>
-  <button>More Recipes</button>
+    <h5>$45 / Hour</h5>
+    <p>Each session is one hour long. Just looking for a consultation to get you started? This may be the plan for you</p>
+    <div class="line-break"></div>
+    <h5>$200</h5>
+    <p>Receive 5 one hour sessions and save when you book this package</p>
+    <div class="line-break"></div>
+    <h5>$400</h5>
+    <p>Receive 10 one our sessions PLUS get your initial consulation FREE!</p>
+    <a href="#contact-section"><button>Book Now</button></a>
+    </div>
+  </div>
+
+  <section id="recipe-section">
+    <h3>Recipes</h3>
+    <p>Keep an eye on this space! I will be posting some of my favourite recipes here for you to try.</p>
+    <div class="line-break"></div>
+    <h5>Coming soon!</h5>
+    <p></p>
+  </section>
+  <!--<button>More Recipes</button>-->
 </main>
 
 <!-- FOOTER -->
-<footer>
-  <h2>Contact</h2>
+<footer id="contact-section">
+  <h3>Contact</h3>
   <p>Want to get in touch? Send me a note through the form below</p>
-
   <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea name="message" rows="10" columns="20" placeholder="Type your message here"></textarea>
+    <input class="submit" type="submit">
   </form>
+  <p class="copyright">Web design and development by Brenna Spademan | 2020</p>
+</footer>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

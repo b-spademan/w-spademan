@@ -86,6 +86,247 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***** Base Styles *****/
+body {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #0A3B8A;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 0 10px;
+  color: #F72585;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.7em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+p {
+  padding: 0 20px;
+  line-height: 1.5em;
+}
+
+button {
+  background-color: #F72585;
+  color: white;
+  width: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+/***** Header *****/
+
+header nav {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+header nav ul li, a {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #0A3B8A;
+}
+
+.hero-container {
+  display: flex;
+  background-color: #D4D2D525;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.hero-content {
+
+}
+
+.hero-content p {
+
+}
+
+.learn {
+  background-color: white;
+  color: #F72585;
+  border: 1px solid #F72585;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+img {
+  width: 50%;
+  padding-top: 20px;
+}
+
+figcaption {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+/***** About *****/
+
+
+main ul {
+  padding: 0;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+main h4 {
+  margin-top: 0;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+.about h5 {
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  margin: 10px 0;
+  padding: 30px 0;
+  text-align: left;
+}
+
+.wrapper h4 {
+  text-align: center;
+}
+
+.blue {
+  background-color: #0A3B8A;
+  color: white;
+}
+
+.grey {
+  background-color: #D4D2D525;
+}
+
+.center {
+  text-align: center;
+}
+
+.quote {
+  padding: 0 20px;
+  font-style: italic;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pricing {
+  padding: 20px 0;
+}
+.pricing p {
+  margin-bottom: 32px;
+}
+
+.line-break {
+  border: 1px solid pink;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.pricing button {
+  margin: 30px 0;
+}
+
+.recipes h3 {
+  margin-top: 0;
+}
+
+/**** Footer *****/
+footer {
+  background-color: #0A3B8A;
+  color: white;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  align-items: center;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.submit {
+  color: #F72585;
+  width: 60%;
+  padding: 10px;
+  margin: 25px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.8em;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 60%;
+  margin: 0 auto;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +501,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

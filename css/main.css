@@ -87,6 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /***** Base Styles *****/
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -110,7 +114,7 @@ h1 {
 h2 {
   font-size: 2.5em;
   font-weight: 700;
-  padding: 0 10px;
+  padding: 0 15px;
   color: #F72585;
 }
 
@@ -173,17 +177,17 @@ header nav ul li, a {
 
 .hero-container {
   display: flex;
-  background-color: #D4D2D525;
+  background-color: #D4D2D530;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.hero-content {
-
-}
-
-.hero-content p {
-
+.hero-container p {
+  font-size: 1.3em;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .learn {
@@ -207,11 +211,6 @@ figcaption {
   font-style: italic;
 }
 
-.hero-buttons {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 30px;
-}
 /***** About *****/
 
 
@@ -251,7 +250,7 @@ main h4 {
 }
 
 .grey {
-  background-color: #D4D2D525;
+  background-color: #D4D2D540;
 }
 
 .center {
@@ -273,7 +272,7 @@ main h4 {
 }
 
 .line-break {
-  border: 1px solid pink;
+  border: 1px solid #F72585;
   width: 20%;
   margin: 0 auto;
 }
@@ -416,8 +415,175 @@ input, textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+  button {
+    font-size: 1.2em;
+  }
+/***** Header *****/
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  header nav ul li {
+    width: 20%;
+
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  figure {
+    width: 50%;
+  }
+
+  figure img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  figcaption {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .hero-quote {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .hero-content p {
+
+  }
+
+
+
+/***** About *****/
+  .main p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.3em;
+  }
+
+  .main ul li {
+    font-size: 1.3em;
+  }
+
+  .main h5 {
+    font-size: 1.5em;
+  }
+
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .wide-view {
+    width: 75%;
+  }
+
+  .wide-view p {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .services h4 {
+    text-align: center;
+    width: 25%;
+  }
+
+  .quote {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 30px 0;
+  }
+
+  .pricing p {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .recipes p {
+    padding-bottom: 30px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  .submit {
+    width: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header nav ul {
+    width: 60%;
+  }
+
+  .price-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .price-item {
+    width: 30%;
+    text-align: left;
+  }
+
+  .price-item p {
+    margin: 0;
+    width: auto;
+  }
+
+  .price-item h5 {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F72585;
+    width: 90%;
+  }
+
+  .line-break {
+    visibility: hidden;
+  }
+
+  form {
+    width: 50%;
+  }
+
 }
 
 @media print,

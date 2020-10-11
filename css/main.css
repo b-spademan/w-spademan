@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 700;
   padding: 0 15px;
   color: #F72585;
@@ -202,7 +202,7 @@ figure {
 }
 
 img {
-  width: 50%;
+  width: 40%;
   padding-top: 20px;
 }
 
@@ -271,8 +271,8 @@ main h4 {
   margin-bottom: 32px;
 }
 
-.line-break {
-  border: 1px solid #F72585;
+.line-break, .line-break-sml {
+  border: 1px solid #F7258540;
   width: 20%;
   margin: 0 auto;
 }
@@ -433,7 +433,10 @@ input, textarea {
 
   header nav ul li {
     width: 20%;
+  }
 
+  .line-break {
+    width: 90%;
   }
 
   .hero-content {
@@ -444,7 +447,7 @@ input, textarea {
   }
 
   figure {
-    width: 50%;
+    width: 30%;
   }
 
   figure img {
@@ -462,14 +465,18 @@ input, textarea {
   .hero-quote {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     align-items: center;
-    align-content: space-around;
   }
 
-  .hero-content p {
-
+  .hero-quote p {
+    width: 60%;
+    font-size: 1.2em;
+    border: 2px solid #F7258520;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
   }
 
 
@@ -553,6 +560,11 @@ input, textarea {
     width: 60%;
   }
 
+  .hero-quote p {
+    width: 50%;
+    font-size: 1.4em;
+  }
+
   .price-list {
     display: flex;
     flex-flow: row wrap;
@@ -577,6 +589,10 @@ input, textarea {
   }
 
   .line-break {
+    width: 60%;
+  }
+
+  .line-break-sml {
     visibility: hidden;
   }
 

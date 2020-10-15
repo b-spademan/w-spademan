@@ -62,12 +62,13 @@
 <main class="main">
   <section class="about" id="about-section">
     <h3>About</h3>
-    <p>I am a retired elementary school music teacher and <a class="ext-link" href="https://www.canfitpro.com/" target="_blank">canfitpro</a> certified health and fitness coach. Based in Tiny Township Ontario, I specialize in working with adults 40+ stay active and eat well to live their best life.</p>
+    <p>After teaching music privately and with the Toronto District School Board for over 30 years, I decided to combine my experience as an educator with my passion for physical fitness and healthy living.  In early 2020 I completed the training required by <a class="ext-link" href="https://www.canfitpro.com/" target="_blank">Canfitpro</a> to provide Personal Training and Weight Loss Coaching services. Now I am very excited to share my expertise and work with people to help them achieve their goals of healthy, active aging!</p>
     <h5>My Qualifications</h5>
     <ul>
       <li>Personal Training Specialist</li>
       <li>Healthy Weight Loss Coach</li>
       <li>canfitpro Certified</li>
+      <li>Bachelor of Education, U of Toronto</li>
     </ul>
     <p>Read more about the services I offer below.</p>
   </section>
@@ -76,7 +77,7 @@
     <div class="wrapper blue">
       <h4>Personal Assessment</h4>
       <div class="wide-view">
-        <p>Before designing your personal fitness program, I will conduct a thorough assessment of your current fitness level, including strength, cardiorespiratory capacity and flexibility.
+        <p>Before designing your personal fitness program, I will conduct a thorough assessment of your current fitness level, including strength, cardiorespiratory capacity, flexibility and body composition.
           <br><br>
         Together we will set realistic goals to improve your health and physical fitness.
         <br><br>
@@ -102,7 +103,7 @@
         <br><br>
         I will then support you in making nutritionally sound and practical changes that will lead to weight loss.
         <br><br>
-        Rather than asking you to adhere to a rigid  diet we will develop individualized strategies to help you make lasting, healthy changes to your food choices.</p>
+        Rather than asking you to adhere to a rigid diet we will develop personalized strategies that will allow you to make lasting, healthy changes to your food choices.</p>
       </div>
     </div>
   </section>
@@ -119,6 +120,7 @@
         <div class="price-item">
           <h5>$45 / Hour</h5>
           <p>Each session is one hour long. Just looking for a consultation to get you started? This may be the plan for you</p>
+          <!-- <p>Pay as you go and sign up for a consulation or a couple workouts to get you started.</p> -->
           <div class="line-break-sml"></div>
         </div>
 
@@ -130,7 +132,7 @@
 
         <div class="price-item">
           <h5>$400</h5>
-          <p>Receive 10 one our sessions PLUS get your initial consulation FREE!</p>
+          <p>Receive 10 one hour sessions PLUS get your initial consulation FREE!</p>
         </div>
       </div>
       <a href="#contact-section"><button>Book Now</button></a>
@@ -151,11 +153,16 @@
 <footer id="contact-section">
   <h3>Contact</h3>
   <p>Want to get in touch? Send me a note through the form below</p>
-  <form>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea name="message" rows="10" columns="20" placeholder="Type your message here"></textarea>
-    <input class="submit" type="submit">
+
+<form action="https://formspree.io/f/moqpedgy" method="post" target="_blank">
+    <label>Name*</label>
+    <input type="text" placeholder="Name" name="name" required>
+    <label>Email*</label>
+    <input type="email" placeholder="Email" name="email" required>
+    <label>Message*</label>
+    <textarea name="message" rows="10" columns="20" placeholder="Type your message here" name="message" required></textarea>
+    <input type="hidden" name="_gotchya">
+    <button type="submit" class="submit">Send</button>
   </form>
   <p class="copyright">Web design and development by Brenna Spademan | 2020</p>
 </footer>

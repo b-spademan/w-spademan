@@ -339,6 +339,12 @@ input, textarea {
   margin: 0 auto;
 }
 
+span {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
